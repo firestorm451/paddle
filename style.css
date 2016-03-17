@@ -1,3 +1,73 @@
+* {
+  box-sizing: border-box;
+}
+
 img {
-  width: 100%
+  width: 100%;
+}
+
+nav {
+  background-color: #1B6AAC;
+  width: 100%;
+  height: 400px;
+  padding: 0px;
+  position:relative;
+  z-index: 1;
+}
+
+nav::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .3;
+  z-index: -1;
+  background-image: url(http://i1-news.softpedia-static.com/images/news2/Global-Warming-Threatens-to-Turns-Oceans-into-Major-Carbon-Emitters-445805-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav h1 {
+  color: white;
+  font-size: 100px;
+  margin-top: 110px;
+}
+
+.blue_box {
+  padding: 20px;
+}
+
+.blue_box ul {
+  margin-top: 10px;
+}
+
+.logo {
+  max-width: 40px;
+  min-width: 20px;
+}
+
+.icon {
+  max-width: 20px;
+  min-width: 10px;
+}
+
+.container {
+  margin: 0 auto;
+}
+#blog {
+  text-align: left;
+}
+
+@media screen and (max-width: 760px) {
+  .logo-text {
+    font-size: 10px;
+  }
 }
