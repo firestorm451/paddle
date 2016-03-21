@@ -37,9 +37,63 @@ nav ul li {
 
 nav h1 {
   color: white;
-  font-size: 100px;
-  margin-top: 110px;
+  font-size: 80px;
+  margin-top: 100px;
+  padding: 0px;
 }
+
+nav h2 {
+  font-size: 12px;
+  padding: 0px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+main h1 {
+  font-size: 50px;
+  margin-top: 50px;
+}
+
+main ul li {
+  display: inline-block;
+}
+
+main p {
+  text-align: left;
+  margin-top: 10px;
+}
+
+main h2 {
+  color: #24699E;
+  margin-left: 40px;
+  padding: 10px;
+}
+
+footer {
+  background-color: #083451;
+  color: white;
+  height: 100px;
+}
+
+footer ul li{
+  display: inline-block;
+  color: white;
+  border-left: 1px solid white;
+  margin-top: 40px;
+}
+
+footer ul li:first-child{
+  border-left: none;
+}
+/*section {
+    background-color: #1B6AAC;
+    width: 100%;
+    height: 400px;
+    padding: 0px;
+    position:relative;
+    z-index: 1;
+    margin-top: 30px;
+} Can't figure out how to get this to work just yet, leaving in.*/
 
 .blue_box {
   padding: 20px;
@@ -59,15 +113,315 @@ nav h1 {
   min-width: 10px;
 }
 
+.headless {
+  width: 3vw;
+  height: 3vw;
+  min-width: 20px;
+  min-height: 20px;
+}
+
+.headless2 {
+  width: 6vw;
+  height: 6vw;
+  min-width: 40px;
+  min-height: 40px;
+  display: block;
+  margin: 0 auto;
+}
+
+.evil_ad {
+  width: 20vw;
+  height: 12vw;
+  min-width: 50px;
+  min-height: 30px;
+  display: block;
+  margin: 0 auto;
+}
+
+.name2 {
+  color: #5E8FB5;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.about_ad {
+  text-decoration: underline;
+  color: #CCCED2;
+  margin-top: 5px;
+}
+
+.read-comments {
+  max-width: 20px;
+  min-width: 10px;
+  background-color: white;
+  margin: 10px;
+}
+
+.share-post {
+  max-width: 20px;
+  min-width: 10px;
+  background-color: black;
+  margin: 10px;
+}
+
+.imp-title {
+  border-left: 2px solid gray;
+}
+
+.choices {
+  padding-top: 20px;
+}
+
+.choices span {
+  padding: 5px;
+  background: #5D686E;
+  margin-right: 10px;
+  background-size: contain;
+  background-size: 100%;
+}
+
+.choices a {
+  display: inline-block;
+  color: white;
+  background: #A1B1C1;
+  padding: 5px;
+  width: 150px;
+  margin-right: 20px;
+}
+
+.choices a:last-child {
+  background: #0F6CB2
+}
+
+.image-links div {
+  display: inline-block;
+  width: calc(1/4 * 100%);
+  height: calc(1/4 * 100vw);
+  overflow: hidden;
+  position: relative;
+  font-size: 0px;
+  margin: 0px;
+  padding: 0px;
+  /*border: 1px solid red;*/
+}
+
+.image-links a {
+color: white;
+font-size: 25px;
+position: absolute;
+bottom: 0px;
+padding: 10px;
+}
+
+.image1 {
+  background-image: url(https://images.unsplash.com/16/unsplash_526360a842e20_1.JPG?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=9b229d72c0f92c5046cc85a6d39b6677);
+  background-size: 100%;
+  z-index: 1;
+  position: relative;
+  padding: 0px;
+  margin: 0px;
+  font-size: 0px;
+}
+
+.image1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .4;
+  z-index: -1;
+  background-color: #1B6AAC;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.image2 {
+  background-image: url(https://images.unsplash.com/photo-1449452198679-05c7fd30f416?crop=entropy&dpr=2&fit=crop&fm=jpg&h=850&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1450);
+  background-size: 100%;
+  z-index: 1;
+  position: relative;
+  padding: 0px;
+  margin: 0px;
+  font-size: 0px;
+}
+
+.image2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .4;
+  z-index: -1;
+  background-color: #1B6AAC;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.image3 {
+  background-image: url(https://images.unsplash.com/photo-1443926886562-c91054221a5c?crop=entropy&dpr=2&fit=crop&fm=jpg&h=850&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1450);
+  background-size: 100%;
+  z-index: 1;
+  position: relative;
+}
+
+.image3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .4;
+  z-index: -1;
+  background-color: #1B6AAC;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.image4 {
+  background-image: url(https://images.unsplash.com/photo-1447958374760-1ce70cf11ee3?crop=entropy&dpr=2&fit=crop&fm=jpg&h=850&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1450);
+  background-size: 100%;
+  z-index: 1;
+  position: relative;
+}
+
+.image4::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .4;
+  z-index: -1;
+  background-color: #1B6AAC;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.finish-logo {
+  margin-top: 30px;
+}
+
+.iron {
+  max-width: 40px;
+  min-width: 20px;
+  margin-left: 50px;
+  background-color: #083451;
+  /*margin-top: 50px;*/
+}
+
+.finish {
+  color: white;
+}
+
+.closing-links li {
+  color: white;
+}
+
 .container {
   margin: 0 auto;
 }
+
 #blog {
   text-align: left;
 }
 
+#name {
+  color: #5E8FB5;
+  padding: 10px;
+}
+
+#on {
+  color: #CCCED2;
+}
+
+#date {
+  text-decoration: underline;
+  color: #CCCED2;
+}
+#second {
+  margin-right: 30px;
+}
+
+#third {
+  background: #053250
+}
+
+#first-paragraph {
+  margin-top: 40px;
+}
+
+#second-paragraph {
+  padding-top: 30px;
+}
+
+#headless2 {
+  margin-top: 60px;
+}
+
+#twitter {
+  color: #CCCED2;
+  font-size: 10px;
+  margin: 0 auto;
+}
+
+#facebook {
+  color: #CCCED2;
+  font-size: 10px;
+  margin: 0 auto;
+  margin-left: 10px;
+}
+
+#instagram {
+  color: #CCCED2;
+  font-size: 10px;
+  margin: 0 auto;
+  margin-left: 10px;
+}
+
+#sidebar {
+  color: #1869A6;
+  margin-top: 50px;
+  font-family: 'Arial Narrow', Arial, sans-serif;
+}
+
+#popular {
+  font-size: 5vw;
+  margin-top: 80px;
+  border-top: 1px solid #CCCED2;
+  padding-top: 15px;
+}
+
+
 @media screen and (max-width: 760px) {
   .logo-text {
     font-size: 10px;
+  }
+  .surf-text {
+    font-size: 30px;
+  }
+  .ironyard-text {
+    font-size: 10px;
+  }
+  .headline-text {
+    font-size: 30px;
+  }
+  footer ul li  {
+    font-size: 10px;
+  }
+  .finish {
+    font-size: 8px;
+  }
+  .image-links a {
+    font-size: 15px;
   }
 }
